@@ -1,0 +1,40 @@
+ /*---[WUFOO]---*/
+
+html.embed {background:none;}
+
+input.text, input.search, textarea.textarea {
+background: #232323;
+border-left: none;
+border-right: none;
+border-bottom: none;
+border-top: none;
+border-radius:10px;
+outline:none;
+}
+
+input.text, input.search {padding: 20px 0 20px 5px;}
+textarea.textarea {padding: 20px 0 20px 10px;}
+
+.wufoo label, .wufoo label.desc {font-size: 1.3em;}
+
+.wufoo input.text, input.search {
+height: 15px;
+font-size:1.6em !important;
+}
+
+.wufoo textarea.textarea {
+	font-size:1.3em !important;
+}
+
+.wufoo span.req {
+	color:#e2e2e2 !important;
+}
+
+@media screen and (max-width:600px) {
+  #wufoo-z1ti9kpj0vvauvw {height:600px !important;}
+  form li.leftThird, form li.middleThird, form li.rightThird { 
+  	width:93% !important; float:none !important; 
+  	clear:both !important; margin:0 !important; 
+  	padding: 6px 0% 9px !important;}
+  form li.message {width:92% !important; padding: 6px 0% 9px !important;}
+}

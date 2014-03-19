@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>	
+    <title>RandoVideo &dash; Proof of Concept</title>
+    <link rel="shortcut icon" href="http://danwithabeard.com/ontogenesis/beard-favicon.ico" type="image/x-icon" />
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <link href="css/no-mq.css" rel="stylesheet">
+    <![endif]-->
+
+    <!--[if (gte IE 9) | (IEMobile)]><!-->
+      <link href="css/mq.css" rel="stylesheet">
+    <!--<![endif]-->	
+  </head>
+  <body>
+  
+    <div class="loader"></div>
+	
+    <!-- Center Div -->
+    <div id="introduction">
+      <div id="center-div">
+				<h1>DIV</h1>
+			</div><!-- END center-div-->		
+      
+      <div class="video-overlay"></div>
+      <video id="intro-video" preload autoplay loop>
+        <source id="video-source" type="video/mp4" src="" /> 
+      </video>
+    </div><!-- END #introduction -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      });
+    </script> 
+  	<script>
+  		if ((navigator.userAgent.match(/iPad/i) != null) || (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null)) { 
+  			document.getElementById("intro-video").style.display = "none";
+  		}
+  		function callback () {
+  			document.querySelector('#intro-video ').load();
+  			document.querySelector('#intro-video ').play();
+  		}
+  		window.addEventListener("load", callback, false);			
+  	</script>
+  </body>
+</html>
